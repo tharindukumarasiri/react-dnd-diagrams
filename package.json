@@ -1,0 +1,44 @@
+{
+  "name": "react-dnd-diagrams",
+  "version": "1.0.0",
+  "description": "Drag and drop diagram drawing tool for react",
+  "main": "./build/index.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tharindukumarasiri/react-dnd-diagrams.git"
+  },
+  "keywords": [
+    "react",
+    "diagrams",
+    "charts",
+    "drawing"
+  ],
+  "author": "tharindu-k",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tharindukumarasiri/react-dnd-diagrams/issues"
+  },
+  "homepage": "https://github.com/tharindukumarasiri/react-dnd-diagrams#readme",
+  "dependencies": {
+    "@ant-design/icons": "^5.3.4",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "antd": "^5.15.3",
+    "html-to-image": "^1.11.11",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "reactflow": "^11.10.4",
+    "web-vitals": "^2.1.4"
+  },
+  "devDependencies": {
+    "sass": "^1.72.0",
+    "sass-loader": "^14.1.1",
+    "webpack": "^5.90.3",
+    "webpack-cli": "^5.1.4"
+  }
+}

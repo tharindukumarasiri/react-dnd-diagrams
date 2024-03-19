@@ -1,0 +1,857 @@
+.flex2 {
+    flex: 2;
+}
+
+.flex3 {
+    flex: 3;
+}
+
+.flex4 {
+    flex: 4;
+}
+
+.flex5 {
+    flex: 5;
+}
+
+.flex6 {
+    flex: 6;
+}
+
+.flex7 {
+    flex: 7;
+}
+
+.flex8 {
+    flex: 8;
+}
+
+.flexCenterMiddle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    div {
+        text-align: center
+    }
+}
+
+.flexAlignCenter {
+    display: flex;
+    align-items: center;
+}
+
+.preventSelect {
+    -webkit-user-select: none;
+    /* Safari */
+    -ms-user-select: none;
+    /* IE 10 and IE 11 */
+    user-select: none;
+    /* Standard syntax */
+}
+
+.dndflow {
+    flex-direction: column;
+    display: flex;
+    flex-grow: 1;
+    height: 100%;
+}
+
+.aside {
+    width: 20%;
+    max-width: 250px;
+}
+
+.sidebarColapsBtnContainer {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+}
+
+.sidebarColapsBtn {
+    color: #0592D9;
+    position: absolute;
+    font-size: 20px;
+    cursor: pointer;
+    right: -10px;
+}
+
+.propertyPanelCollapseBtn {
+    left: 0;
+}
+
+.customNodeContainer {
+    display: flex;
+    align-items: center;
+    border: 0;
+}
+
+.settingsIcon {
+    color: #0592D9;
+    margin-right: 5px;
+    font-size: 18px;
+}
+
+.tableContainer {
+    border: 2px solid;
+}
+
+.dndflow .reactflowrapper {
+    flex-grow: 1;
+    width: 100vw;
+    height: 100vh;
+}
+
+.dndflow .selectall {
+    margin-top: 10px;
+}
+
+.dndflow .drawingTextArea {
+    position: absolute;
+    border: transparent;
+    text-align: center;
+    resize: none;
+    font-size: 8px;
+    background-color: transparent;
+    margin-top: 10px;
+    width: 100%;
+
+    &:focus {
+        outline: 0;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .dndflow {
+        flex-direction: row;
+    }
+
+    .dndflow aside {
+        border-right: 1px solid #eee;
+        border-left: 1px solid #eee;
+        padding: 5px 10px;
+        font-size: 12px;
+        background: #fcfcfc;
+    }
+}
+
+div.customHandle {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 0;
+    transform: none;
+    border: none;
+    opacity: 0;
+}
+
+div.customHandle2 {
+    left: 110%;
+}
+
+div.customHandle2Right {
+    left: 110%;
+    width: 7px;
+    height: 7px;
+
+    &:hover {
+        width: 15px;
+        height: 15px;
+    }
+}
+
+div.customHandle2Top {
+    top: -25%;
+    width: 7px;
+    height: 7px;
+
+    &:hover {
+        width: 15px;
+        height: 15px;
+    }
+}
+
+div.customHandle2Left {
+    left: -25%;
+    width: 7px;
+    height: 7px;
+
+    &:hover {
+        width: 15px;
+        height: 15px;
+    }
+}
+
+div.customHandle2Bottom {
+    bottom: -25%;
+    width: 7px;
+    height: 7px;
+
+    &:hover {
+        width: 15px;
+        height: 15px;
+    }
+}
+
+
+.groupLayersBtn {
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    border: 1px solid #808080;
+    border-radius: 10px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.toolBarContainer {
+    width: 45vw;
+    margin-left: 50px;
+    height: 40px;
+    background-color: white;
+    border: 1px solid rgba(223, 212, 212, 0.573);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.pagesBarContainer {
+    width: 60vw;
+    height: 40px;
+    background-color: white;
+    border: 1px solid rgba(223, 212, 212, 0.573);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.pageTabContainer {
+    border: solid 1px;
+    border-radius: 8px;
+    padding: 5px;
+    border-color: #434343;
+    margin-left: 10px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.pageTabSelected {
+    background-color: #d8d8d8;
+    border: solid 1px;
+    border-radius: 8px;
+    padding: 6px;
+    border-color: #d8d8d8;
+    margin-left: 10px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.newPageIcon {
+    font-size: 15px;
+    margin-left: 10px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.pagesTabInputContainer {
+    margin-left: 10px;
+}
+
+.pagesTabInput {
+    background-color: #d8d8d8 !important;
+    padding: -6px !important;
+    border-radius: 8px !important;
+    max-width: 70px;
+}
+
+.toolBarSeparator {
+    height: 80%;
+    width: 1px;
+    background-color: rgba(180, 165, 165, 0.477);
+}
+
+.layerContainer {
+    max-height: 265px;
+    overflow-y: scroll;
+}
+
+.layerContainer {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.layerItemContainer {
+    display: flex;
+    overflow: hidden;
+    padding: 5px;
+    border-bottom: 1px solid #555555;
+}
+
+.layerItemSelected {
+    background-color: #CCCCCC;
+}
+
+.layerIcon {
+    margin-right: 5px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.layerIconParent {
+    margin-right: 20px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.linkContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.linkTabsContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.linkTabSelected {
+    border-top: solid 1px #999999;
+    border-left: solid 1px #999999;
+    border-right: solid 1px #999999;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+.linkTabNotSelected {
+    border-bottom: solid 1px #999999;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.linkContentContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: solid 1px #999999;
+    border-left: solid 1px #999999;
+    border-right: solid 1px #999999;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 8px;
+}
+
+.linkInputContainer {
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.linkAddBtn {
+    max-width: 80px;
+    margin-bottom: 10px;
+}
+
+.linkItem {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: auto;
+    color: #0592D9;
+    text-decoration: underline;
+}
+
+.linkItemContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 8px;
+}
+
+.fontSizeContainer {
+    width: 85px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.sizeInputEndText {
+    position: absolute;
+    right: 30px;
+    top: 12px;
+}
+
+.decreaseFontSize {
+    margin-right: 10px;
+    margin-top: 10px;
+    font-weight: bold;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.increaseFontSize {
+    margin-left: 10px;
+    margin-top: 10px;
+    font-weight: bold;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.fontSizeInput {
+    max-width: 40px;
+    margin-top: 10px;
+
+}
+
+.colorPickerContainer {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 40px;
+    overflow: visible;
+    margin-top: 10px;
+    font-weight: bold;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.sidebarMainContainer {
+    height: 77vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding-right: 10px;
+    margin-top: 10px;
+}
+
+.sidebarMainContainer {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.sidebarCategoryContainer {
+    background-color: #EAEAEA;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+    margin-bottom: 10px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.sidebarCategoryImageUploadedContainer {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+}
+
+.sidebarCategoryImageUploadContainer {
+    background-color: #EAEAEA;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.propertyPanelContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #EAEAEA;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.sidebarCategoryheader {
+    background-color: #CCCCCC;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.colorIcon {
+    border: 1px solid rgba(223, 212, 212, 0.573);
+    height: 27px;
+    width: 27px;
+}
+
+.appearanceRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.appearanceRowItem {
+    margin-right: 10px;
+}
+
+.hexCodeInput {
+    max-width: 55px;
+}
+
+.propertyPanelSeparator {
+    border-bottom: 1px #000;
+    margin-bottom: 5px;
+}
+
+.sidebarItemContainer {
+    display: flex;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.fontColorFooter {
+    position: absolute;
+    bottom: 0;
+    left: -5px;
+    height: 5px;
+    width: 20px;
+    bottom: -5px;
+}
+
+.fontBoldContainer {
+    font-weight: bolder;
+    width: 40px;
+    border-radius: 3px;
+    margin-top: 10px;
+    text-align: center;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.nodeCloseBtn {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    font-size: 7px;
+    color: red;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.textBtnRotate {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    font-size: 7px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.tableBtnVertical {
+    position: absolute;
+    top: -10px;
+    font-size: 6px;
+    padding: 0px 2px !important;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.tableBtnHorizontal {
+    position: absolute;
+    bottom: 0px;
+    right: -40px;
+    font-size: 6px;
+    padding: 0px 2px !important;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.activityIcon {
+    position: absolute;
+}
+
+.activityContainer {
+    max-width: 60px;
+}
+
+.toolBarIcon {
+    font-size: 20px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.handleHidden {
+    visibility: hidden;
+}
+
+.canvasContextMenu {
+    position: absolute;
+    z-index: 10;
+}
+
+.canvasContextMenu button {
+    display: block;
+    margin-bottom: 2px;
+    width: 100%;
+}
+
+.rotateHandle {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: #3367d9;
+    left: 50%;
+    top: -18px;
+    border-radius: 100%;
+    transform: translate(-50%, -50%);
+    cursor: alias;
+}
+
+.rotateHandle:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 15px;
+    background: #3367d9;
+    left: 2px;
+    top: 5px;
+}
+
+.lineChartContainer {
+    position: relative;
+    border: solid 2px;
+    border-color: #000 #000 transparent transparent;
+    overflow: hidden;
+}
+
+.lineChartCurveBox {
+    position: absolute;
+    border: solid 1px #000;
+    border-radius: 50%;
+    border-style: dotted;
+}
+
+.lineChartLine {
+    position: absolute;
+    left: -1.5px;
+    top: -3.5px;
+    height: 2px;
+    border: 0;
+    background-color: #000;
+}
+
+.lineChartLineToolbarItem {
+    width: 80px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.copyPasteContainer {
+    border: solid 1px;
+    border-radius: 8px;
+    padding: 5px;
+    border-color: #434343;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.helpIconContainer {
+    margin-right: 100px;
+    color: #0592D9;
+}
+
+.zoomValueContainer {
+    width: 50px;
+}
+
+.matrixChartContainer {
+    display: flex;
+    flex-direction: column;
+    border: solid 1.5px;
+    border-radius: 3px;
+    padding: 20px;
+    border-color: #d3d3d3;
+}
+
+.matrixChartHeader {
+    border: solid 1px;
+    margin-bottom: 10px;
+    background-color: #a2a2a2;
+    border-color: #434343;
+}
+
+.matrixChartHeaderText {
+    border: transparent;
+    text-align: center;
+    resize: none;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: bolder;
+    background-color: transparent;
+    margin-top: 5px;
+    height: 30px;
+}
+
+.matrixChartSection {
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    flex-direction: row;
+    border: solid 1px;
+    border-color: #434343;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.matrixChartItem {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100px;
+    border: solid 1px;
+    border-color: #434343;
+    background-image: linear-gradient(90deg, lightcoral, white);
+    margin-top: 10px;
+    border-radius: 7px;
+}
+
+.matrixChartItemLarge {
+    min-height: 70px;
+}
+
+.matrixAddNewItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 20px;
+    border: solid 1px;
+    border-color: #D3D3D3;
+    margin-top: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    color: #808080;
+
+    &:hover {
+        cursor: pointer;
+        background-color: #c6bcbc;
+    }
+}
+
+.matrixItemText {
+    height: 100%;
+    border: transparent;
+    text-align: center;
+    resize: none;
+    font-size: 11px;
+    background-color: transparent;
+}
+
+.matrixItemClose {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    font-size: 8px;
+    z-index: 200;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.matrixToolbarContainer {
+    width: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+}
+
+.matrixColorPickerRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.matrixPaintBucket {
+    font-size: 15px;
+    color: #434343;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.matrixColumnActionRow {
+    display: flex;
+    flex-direction: row;
+}
