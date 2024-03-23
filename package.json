@@ -1,6 +1,6 @@
 {
   "name": "react-dnd-diagrams",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Drag and drop diagram drawing tool for react",
   "main": "./build/index.js",
   "scripts": {
